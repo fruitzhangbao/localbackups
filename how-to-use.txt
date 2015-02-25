@@ -1,4 +1,5 @@
 #更新本地仓库的所有文件
 git add *
-#将本地仓库的更新同步到远端仓库
 git commit -m "这是提交的注释说明，必须要有的"
+#将本地仓库的更新同步到远端仓库
+git push origin master
