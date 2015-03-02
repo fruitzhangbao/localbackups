@@ -1,0 +1,258 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!-- Consider adding a manifest.appcache: h5bp.com/d/Offline -->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="zh-CN"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8" />
+	
+	<title>新建长话 | 老朋友</title>
+	<meta name="description" content="" />
+	<meta name="viewport" content="width=device-width" />
+	<link rel="shortcut icon" href="img/of_favicon.ico" type="image/x-icon" />
+	<link rel="stylesheet" media="screen" href="css/superfish.css" /> 
+	<link rel="stylesheet" href="css/nivo-slider.css" media="all" /> 
+	<link rel="stylesheet" href="css/tweet.css" media="all" />
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" media="all" href="css/lessframework.css" />
+	
+	<!-- All JavaScript at the bottom, except this Modernizr build.
+	   Modernizr enables HTML5 elements & feature detects for optimal performance.
+	   Create your own custom Modernizr build: www.modernizr.com/download/ -->
+	<script src="js/modernizr-2.5.3.min.js"></script>
+
+</head>
+<body>
+	<!-- WRAPPER -->
+	<div class="wrapper cf">
+		<header>
+			
+			<div id="logo" class="cf">
+				<a href="index.html"><img src="img/logo.png" alt="" /></a>
+			</div>
+			
+			<!-- nav -->
+			<nav class="cf">
+				<ul id="nav" class="sf-menu">
+					<li class="current-menu-item"><a href="blog.html"><span>长话</span></a></li>
+				</ul>
+				<div id="combo-holder"></div>
+			</nav>
+			<!-- ends nav -->
+		</header>
+		
+		
+		<!-- MAIN -->
+		<div role="main" id="main" class="cf">
+		
+			<!-- page-content -->
+			<div class="page-content">
+				
+				<!-- entry-content -->	
+	        	<div class="entry-content cf">
+					<!-- NewLongTalk -->				
+					<div id="createNewLongTalk">
+						<h4 class="heading">新建一篇长话</h4>
+						<form action="single.html" method="post" id="commentform" />
+						<p>标题:<input id="longTalk-title" name="longTalk-title" type="text" value="" size="30" aria-required="true"/></p>
+						<p>内容:
+						<script id="editor" type="text/plain" style="width:100%;height:353px;"></script>
+						</p>
+						
+						<!-- allowed tags -->
+						<p class="form-allowed-tags" style="">您可以在右侧选择长话所属于的分类→
+						<select id="longTalkCat">
+						  <option value="audi">未分类</option>
+						  <option value ="volvo">文学</option>
+						  <option value ="saab">电影</option>
+						  <option value="opel">动画</option>
+						</select> <span id="newLongTalkCat" style="cursor:pointer;"> | 新建分类</span>		
+						<span id="deleteLongTalkCat" style="cursor:pointer;"> | 删除分类</span></p>
+						<!-- ENDS allowed tags -->
+						
+						<p id="form-submit" class="form-submit">
+							<input name="submit" type="submit" id="submit" value="发表长话" />
+						</p>
+						</form>
+						<div id="createNewLongTalkCatDiv" style="display:none;">
+							在这里输入你的新分类名字→<input type="text" placeholder='输入新的分类名称' size="15"/>
+							<button id="submitNewCat">创建分类</button>
+							<button id="cancelCreateNewCat">取消创建</button>
+						</div>
+						<div id="deleteLongTalkCatDiv" style="display:none;">
+							删除分类是很重要的行为，请您慎重考虑
+							<select id="todeleteLongTalkCat">
+							  <option value="audi">未分类</option>
+							  <option value ="volvo">文学</option>
+							  <option value ="saab">电影</option>
+							  <option value="opel">动画</option>
+							</select>
+							<button id="submitDeleteCat">←删除这个分类</button>
+							<button id="cancelDeleteNewCat">取消删除</button>
+						</div>
+					</div>
+					<!-- ENDS NewLongTalk -->					
+				</div>
+				<!-- ENDS entry-content -->
+			</div><!-- ENDS page-content -->
+			
+		</div>
+		<!-- ENDS MAIN -->
+		
+		<footer>
+		
+			<!-- twitter -->
+			<div id="twitter-holder">
+				<div class="ribbon-left"></div>
+				<div class="ribbon">
+					<div id="tweets-bar" class="tweet"></div>
+				</div>
+				<div class="ribbon-right"></div>
+			</div>
+			<!-- ENDS twitter -->
+			
+			
+			<!-- widgets -->
+			<ul class="widget-cols cf">
+				<li class="first-col">
+					
+					<div class="widget-block">
+						<h4>我</h4>
+						<div class="recent-post cf">
+							<a href="#" class="thumb"><img src="img/dummies/54x54.gif" alt="Post" /></a>
+							<div class="post-head">
+								<a href="#">张宝</a><span>2444548651@qq.com</span>
+							</div>
+						</div>
+					</div>
+				</li>
+				
+				<li class="second-col">
+					
+					<div class="widget-block">
+						<h4>什么是长话？</h4>
+						<p>[长话]即文章，字数会很多的那种知识、情感的载体，就像[博客]一样，仅仅是文章的另一个称谓包装，这个名字希望您会喜欢^.^</p>
+					</div>
+					
+				</li>
+				
+				<li class="third-col">
+					
+					<div class="widget-block">
+						<h4>本网页模板说明</h4>
+						<p>Vintage Template it's completely free this means you don't have to pay anything <a href="http://luiszuno.com/blog/license">read license</a>.</p> 
+						<p>Visit <a href="http://templatecreme.com/">Template Creme</a> and find the most beautiful free templates up to date.</p>
+		     		</div>
+		     		
+				</li>
+				
+				<li class="fourth-col">
+					
+					<div class="widget-block">
+						<h4>技术感谢</h4>
+						<ul>
+							<li class="cat-item"><a href="http://templatecreme.com/list/">templatecreme.com</a></li>
+							<li class="cat-item"><a href="http://www.w3school.com.cn/">W3school</a></li>
+							<li class="cat-item"><a href="http://www.baidu.com/?source=http://www.fruitzhangbao.com">百度</a></li>
+						</ul>
+					</div>
+
+				</li>	
+			</ul>
+			<!-- ENDS widgets -->
+			
+			<!-- bottom -->
+			<div id="bottom">
+				<div id="widget-trigger-holder"><a id="widget-trigger" href="#" title="点击我" class="poshytip"></a></div>
+				<div id="content">&copy; 2015 老朋友 | <a target="_blank" href="http://www.fruitzhangbao.com/">fruitzhangbao.com</a> All rights reserved.</a></div>
+			</div>
+			<!-- ENDS bottom -->
+			
+		</footer>
+		
+	</div>
+	<!-- ENDS WRAPPER -->
+	
+	<!-- JavaScript at the bottom for fast page loading -->
+	
+	<!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
+	<script src="js/jquery-1.7.1.min.js"></script>
+	<script>window.jQuery || document.write('<script src="js/jquery-1.7.1.min.js"><\/script>')</script>
+	
+	<!-- scripts concatenated and minified via build script -->
+	<script src="js/custom.js"></script>
+	
+	<!-- superfish -->
+	<script src="js/superfish-1.4.8/js/hoverIntent.js"></script>
+	<script src="js/superfish-1.4.8/js/superfish.js"></script>
+	<script src="js/superfish-1.4.8/js/supersubs.js"></script>
+	<!-- ENDS superfish -->
+	
+	<script src="js/tweet/jquery.tweet.js"></script>
+	<script src="js/jquery.isotope.min.js"></script>
+	<script src="js/jquery.nivo.slider.js"></script>
+	<script src="js/css3-mediaqueries.js"></script>
+	<script src="js/tabs.js"></script>
+	<script src="js/poshytip-1.1/src/jquery.poshytip.min.js"></script>
+	
+	<!-- ueditor所需要的一些js文件 -->
+	<script type="text/javascript" charset="utf-8" src="ueditor/ueditor.config.js"></script>
+    <script type="text/javascript" charset="utf-8" src="ueditor/ueditor.all.min.js"> </script>
+    <script type="text/javascript" charset="utf-8" src="ueditor/lang/zh-cn/zh-cn.js"></script>
+	<script type="text/javascript">
+        var ue = UE.getEditor('editor');
+    </script>
+	
+	<!-- end scripts -->
+	<script>
+		$(document).ready(function(){
+		  //点击“新建分类”按钮时需要显示与隐藏的部分
+		  $("#newLongTalkCat").click(function(){
+			$(this).hide();
+			$("#form-submit").hide();
+			$("#createNewLongTalkCatDiv").show();
+			//这是为了防止之前用户点击了“删除分类”按钮时的情况
+			$("#deleteLongTalkCat").show();
+			$("#deleteLongTalkCatDiv").hide();
+		  });
+		  //点击“删除分类”按钮时需要显示与隐藏的部分
+		  $("#deleteLongTalkCat").click(function(){
+			$(this).hide();
+			$("#form-submit").hide();
+			$("#deleteLongTalkCatDiv").show();
+			//这是为了防止之前用户点击了“创建”按钮时的情况
+			$("#newLongTalkCat").show();
+			$("#createNewLongTalkCatDiv").hide();
+		  });
+		  //提交“新建分类”按钮时需要显示与隐藏的部分
+		  $("#submitNewCat").click(function(){
+		    $("#newLongTalkCat").show();
+			$("#form-submit").show();
+			$("#createNewLongTalkCatDiv").hide();
+			alert("这个分类创建成功！");
+		  });
+		  //提交“删除这个分类”按钮时需要显示与隐藏的部分
+		  $("#submitDeleteCat").click(function(){
+		    $("#deleteLongTalkCat").show();
+			$("#form-submit").show();
+			$("#deleteLongTalkCatDiv").hide();
+			alert("删除分类成功！");
+		  });
+		  //点击“取消创建”按钮时需要显示与隐藏的部分
+		  $("#cancelCreateNewCat").click(function(){
+		    $("#newLongTalkCat").show();
+			$("#form-submit").show();
+			$("#createNewLongTalkCatDiv").hide();
+		  });
+		  //点击“取消删除”分类按钮时需要显示与隐藏的部分
+		  $("#cancelDeleteNewCat").click(function(){
+		    $("#deleteLongTalkCat").show();
+			$("#form-submit").show();
+			$("#deleteLongTalkCatDiv").hide();
+		  });
+		});
+		</script>
+	</script>
+</body>
+</html>
